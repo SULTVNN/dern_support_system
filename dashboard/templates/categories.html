@@ -1,0 +1,30 @@
+{% extends './core/dashboardbase.html' %}
+
+{% block Messages %}active{% endblock Messages %}
+{% block dashboardContent %}
+    <div class="table-responsive login">
+        <table
+            class="table table-striped table-hover table-borderless table-light align-middle"
+        >
+            <thead class="table-light">
+                <tr>
+                    <th>id</th>
+                    <th>Category</th>
+                    <th>operations</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                {% for item in data %}
+                <tr class="table-light">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>
+                        <a href="/dashboard/edit/{{item.id}}" class="btn btn-primary">Edit</a>
+                        <a href="/dashboard/delete/{{item.id}}" class=" btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock dashboardContent %}

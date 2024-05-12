@@ -1,0 +1,50 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    FAQ
+{% endblock title %}
+
+{% block FAQ %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock FAQ %}
+    
+{% block bodyclass %}
+    bodyy
+{% endblock bodyclass %}
+{% block basiccolor %}basic-color2 {% endblock basiccolor %}
+{% block basiccolor2 %}basic-color2 {% endblock basiccolor2 %}
+{% block content %}
+    <div id="carouselExampleIndicators" class="carousel slide faq" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item caro-tt active">
+                <h1>What types of computer systems repair?</h1>
+                We repair a wide range of computer systems, including desktops, laptops, servers, and peripherals such as printers and monitors. Our technicians are experienced in diagnosing and fixing hardware and software issues. 
+            </div>
+            <div class="carousel-item caro-tt">
+                <h1>How long does it take to repair a computer?</h1> 
+                The time required to repair a computer depends on the nature and severity of the issue. Our technicians strive to diagnose and resolve problems as quickly as possible while ensuring quality and reliability. We'll provide you with an estimated timeframe once we've assessed your system.
+            </div>
+            <div class="carousel-item caro-tt">
+                <h1>What services do you offer for businesses?</h1>
+                For business customers, we provide comprehensive on-site support services, including troubleshooting, maintenance, and repairs for computer systems and networks. We also offer IT consulting and customized solutions tailored to the specific needs of each business.
+            </div>
+            <div class="carousel-item caro-tt">
+                <h1>Do you offer remote support services?</h1>
+                Yes, we offer remote support services for certain types of technical issues. Our technicians can remotely access your computer system to troubleshoot and resolve software-related problems, perform updates, and provide assistance as needed.
+            </div>
+        </div>
+
+    </div>
+{% endblock content %}
